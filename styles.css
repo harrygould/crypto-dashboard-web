@@ -1,0 +1,143 @@
+body {
+  background-image: url("assets/bitcoin-background-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.chart-grid {
+  display: flex;
+  flex-direction: column; /* Default: vertical stack */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between chart containers */
+}
+
+.chart-container {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.tradingview-chart-container {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: stretch;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .chart-grid {
+    flex-direction: row; /* Side-by-side layout */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .chart-container {
+    width: 42%; /* Adjust width for side-by-side layout */
+  }
+}
+canvas {
+  width: 100%;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+p {
+  font-size: 14px;
+  padding: 20px;
+  background-color: rgba(255, 153, 0, 0.8);
+  border-radius: 8px;
+  border: 2px;
+}
+
+header {
+  font-size: 14px;
+  padding: 10px;
+  background-color: rgba(255, 153, 0, 0.8);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+}
+
+footer {
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(255, 153, 0, 0.8);
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  letter-spacing: normal;
+  font-weight: 300;
+}
+
+#header-title,
+#header-description {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#header-description {
+  font-style: italic;
+  letter-spacing: normal;
+  font-weight: 300;
+}
+
+#did-you-know {
+  border-color: rgba(255, 153, 0, 0.8);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bitcoin-fact {
+  margin: 10px;
+}
+
+#search-bar {
+  margin-bottom: 20px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  border-color: rgba(255, 153, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+#search-bar::placeholder {
+  color: white; /* Change to desired color */
+  opacity: 0.7; /* Ensure full opacity */
+  font-style: italic; /* Optional: Make it italic */
+}
